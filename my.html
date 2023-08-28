@@ -7,96 +7,121 @@
     <meta name="keywords" content="resume, cv, web" />
     <meta name="description" content="My own site-resume" />
     <title>Resume</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img
-      src="https://m.media-amazon.com/images/I/31r2xmJZIWL.jpg"
-      alt="My logo"
-      width="250px"
-    />
+    <div class="container">
+      <div class="header">
+        <div class="card">
+          <div class="cap">
+            <div class="info">
+              <img
+                src="https://m.media-amazon.com/images/I/51gPKziAkFL._AC_SX679_.jpg"
+                alt="My logo"
+              />
+            </div>
+            <div class="info-text">
+              <h1>Eugene Vlasenko</h1>
 
-    <h1>Arthouros Vlucci</h1>
+              <p>
+                I'm trainee FrontEnd developer and co-founder of .Harvl company.
+                Love fitness, coding, style, hats, glasses, accessories. Create
+                electronic music, play guitar, piano, video games and many other
+                cool things!
+              </p>
+              <div class="socials">
+                <div class="card">
+                  <h2>Contact me</h2>
 
-    <p>
-      I'm trainee <em>FrontEnd developer</em>. And co-founder of
-      <strong>>Bigst Watches Ltd></strong> company. Love to play
-      <strong><em>guitar</em></strong
-      >, play <strong><em>video games</em></strong> and
-      <strong><em>snowboarding</em></strong
-      >.
-    </p>
-
-    <a href="https://www.instagram.com/jimroqua/" target="_blank">Instagram</a>
-    |
-    <a href="https://web.telegram.org/k/#@HokutoNoRock" target="_blank"
-      >Telegram</a
-    >
-    |
-    <a href="https://www.facebook.com/eugene.vlasenko.3/" target="_blank"
-      >Facebook</a
-    >
-
-    <h2>My Hobbys</h2>
-    <ol>
-      <li>Electric Guitar</li>
-      <li>Synthesizer</li>
-      <li>Video Games</li>
-      <li>Hats</li>
-      <li>Gym</li>
-    </ol>
-
-    <h2>Work Experience</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Years</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>4 Channel</td>
-          <td>Archievarius</td>
-          <td>2018-2022</td>
-        </tr>
-        <tr>
-          <td>Rockston Music Academy</td>
-          <td>Ingest</td>
-          <td>2016-2018</td>
-        </tr>
-        <tr>
-          <td>Absolute</td>
-          <td>Database Admin</td>
-          <td>2015-2016</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2><strong>Contact me</strong></h2>
-
-    <form>
-      <div>
-        <label for="name">Your name:</label>
-        <input type="text" id="name" placeholder="Enter your name" />
-      </div>
-      <div>
-        <label for="email">Your email:</label>
-        <input type="email" id="email" placeholder="Enter your email" />
-      </div>
-      <div>
-        <label for="message">Your message:</label>
-        <br />
-        <textarea
-          id="message"
-          cols="20"
-          rows="5"
-          placeholder="Enter message..."
-        ></textarea>
-        <div>
-          <input type="submit" value="Submit!" />
+                  <a href="https://www.instagram.com/jimroqua/" target="_blank"
+                    >Instagram</a
+                  >
+                  |
+                  <a
+                    href="https://web.telegram.org/k/#@HokutoNoRock"
+                    target="_blank"
+                    >Telegram</a
+                  >
+                  |
+                  <a
+                    href="https://www.facebook.com/eugene.vlasenko.3/"
+                    target="_blank"
+                    >Facebook</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h2>My Hobbys</h2>
+            <ol class="list-items">
+              <li class="list-item">Electric Guitar</li>
+              <li class="list-item">Synthesizer</li>
+              <li class="list-item">Video Games</li>
+              <li class="list-item">Hats</li>
+              <li class="list-item">Gym</li>
+            </ol>
+          </div>
         </div>
       </div>
-    </form>
+
+      <div class="card">
+        <h2>Work Experience</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Years</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>4 Channel</td>
+              <td>Archievarius</td>
+              <td>2018-2022</td>
+            </tr>
+            <tr>
+              <td>Rockston Music Academy</td>
+              <td>Ingest</td>
+              <td>2016-2018</td>
+            </tr>
+            <tr>
+              <td>Absolute</td>
+              <td>Database Admin</td>
+              <td>2015-2016</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Contact me</h2>
+
+        <form action="/">
+          <div class="form-row-head">
+            <div class="form-row">
+              <label for="name">Your name: </label
+              ><input type="text" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-row">
+              <label for="email">Your email: </label
+              ><input type="email" id="email" placeholder="Enter your email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Your message:</label>
+            <textarea
+              id="message"
+              cols="20"
+              rows="3"
+              placeholder="Enter your message..."
+            ></textarea>
+          </div>
+
+          <button class="btn">Submit!</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
